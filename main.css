@@ -24,7 +24,7 @@
 
 
   .swiper-pagination{
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
   }
 .swiper-button-next{
   background-color: black;
@@ -34,6 +34,47 @@
 .swiper-button-prev{
   background-color: black;
   color: white;
+  }
+
+  .swiper-rtl .swiper-button-next {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(252, 247, 247);
+    opacity: 0.5;
+    border-radius: 50%;
+    /* border: 1px solid grey; */
+    
+    &:hover {
+      /* background-color:lightcoral; */
+      border: 1px solid black;
+    }
+  }
+  
+  .swiper-button-prev {
+    width: 35px !important;
+    height: 35px !important;
+    background-color: rgb(252, 247, 247);
+    opacity: 0.5;
+    border-radius: 50%;
+    /* border: 1px solid grey; */
+    &:hover {
+      /* background-color:lightcoral; */
+      border: 1px solid black;
+    }
+  }
+  
+  .swiper-rtl .swiper-button-next:after {
+    font-size: 12px;
+    color: black;
+  }
+  .swiper-rtl .swiper-button-prev::after {
+    font-size: 12px;
+    color: black;
+  }
+  
+  .swiper-button-next.swiper-button-disable,
+  .swiper-button-prev.swiper-button-disableو.swiper-button-prev {
+    opacity: 0;
   }
 
     
